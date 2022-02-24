@@ -1,7 +1,7 @@
 # CMPS 2200  Recitation 02
 
-**Name (Team Member 1):**_________________________  
-**Name (Team Member 2):**_________________________
+**Name (Team Member 1):**____Haochen Chen_____________________  
+**Name (Team Member 2):**____Maria Chen_____________________
 
 In this recitation, we will investigate recurrences. 
 To complete this recitation, follow the instructions in this document. Some of your answers will go in this file, and others will require you to edit `main.py`.
@@ -48,9 +48,13 @@ where $W(1) = 1$.
 
 - [ ] 4. (2 point) Now, derive the asymptotic behavior of $W(n)$ using $f(n) = 1$, $f(n) = \log n$ and $f(n) = n$. Then, generate actual values for $W(n)$ for your code and confirm that the trends match your derivations.
 
+  When using $f(n) = 1$, W(n) = log(n); when using $f(n) = \log n$, W(n) = log(n)^2; and when using $f(n) = n$, W(n)=n*log(n). we used our code to confirm the trends. 
+
 **TODO: your answer goes here**
 
-- [ ] 5. (4 points) Now that you have a nice way to empirically generate valuess of $W(n)$, we can look at the relationship between $a$, $b$, and $f(n)$. Suppose that $f(n) = n^c$. What is the asypmptotic behavior of $W(n)$ if $c < \log_b a$? What about $c > \log_b a$? And if they are equal? Modify `compare_work` to compare empirical values for different work functions (at several different values of $n$) to justify your answer. 
+- [ ] 5. (4 points) Now that you have a nice way to empirically generate valuess of $W(n)$, we can look at the relationship between $a$, $b$, and $f(n)$. Suppose that $f(n) = n^c$. What is the asypmptotic behavior of $W(n)$ if $c < \log_b a$? What about $c > \log_b a$? And if they are equal? Modify `compare_work` to compare empirical values for different work functions (at several different values of $n$) to justify your answer.
+
+- After running several times of our code to test, we find that $W(n)$ values are different when $c < \log_ba and when $c > \log_ba$. We used compare_work to compare empirical values for different work functions (for several different values of $n$). When $c < \log_ba, it is O(nlog ba); and when $c > \log_ba$, it is O(n^c). 
 
 **TODO: your answer goes here**
 
